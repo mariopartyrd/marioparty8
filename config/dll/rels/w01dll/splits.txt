@@ -81,3 +81,10 @@ REL/board/board_object.cpp:
 	.rodata     start:0x000006F8 end:0x00000798
 	.data       start:0x00002128 end:0x00002550
 	.bss        start:0x000003B8 end:0x000003D0
+
+REL/board/board_masu.cpp:
+	.text       start:0x0004F8E4 end:0x00060AF4
+	.ctors      start:0x00000018 end:0x0000001C
+	.rodata     start:0x00000798 end:0x000008B0
+	.data       start:0x00002550 end:0x00002718
+	.bss        start:0x000003D0 end:0x00000488
