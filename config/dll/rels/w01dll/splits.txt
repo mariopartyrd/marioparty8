@@ -5,3 +5,86 @@ Sections:
 	.rodata     type:rodata align:32
 	.data       type:data align:32
 	.bss        type:bss align:32
+
+REL/w01dll/world01.cpp:
+	.text       start:0x00000000 end:0x00013788
+	.ctors      start:0x00000000 end:0x00000004
+	.rodata     start:0x00000000 end:0x00000208
+	.data       start:0x00000000 end:0x00000E20
+	.bss        start:0x00000000 end:0x00000120
+
+REL/w01dll/world01_event.cpp:
+	.text       start:0x00013788 end:0x00022414
+	.ctors      start:0x00000004 end:0x00000008
+	.rodata     start:0x00000208 end:0x000004D8
+	.data       start:0x00000E20 end:0x00001728
+	.bss        start:0x00000120 end:0x00000158
+
+REL/w01dll/world01_blur.cpp:
+	.text       start:0x00022414 end:0x00022C0C
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x000004D8 end:0x00000530
+	.bss        start:0x00000158 end:0x00000168
+
+REL/board/game_process.cpp:
+	.text       start:0x00022C0C end:0x00022F6C
+	.data       start:0x00001728 end:0x00001750
+
+REL/board/game_object.cpp:
+	.text       start:0x00022F6C end:0x00026534
+	.data       start:0x00001750 end:0x00001820
+	.bss        start:0x00000168 end:0x00000170
+
+REL/board/game_event.cpp:
+	.text       start:0x00026534 end:0x0002E910
+	.data       start:0x00001820 end:0x000019D0
+	.bss        start:0x00000170 end:0x00000190
+
+REL/board/game_memory.cpp:
+	.text       start:0x0002E910 end:0x00031B98
+	.data       start:0x000019D0 end:0x00001A20
+	.bss        start:0x00000190 end:0x00000198
+
+REL/board/game_math.cpp:
+	.text       start:0x00031B98 end:0x00036F54
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x00000530 end:0x00000618
+	.data       start:0x00001A20 end:0x00001A70
+	.bss        start:0x00000198 end:0x000001B0
+
+REL/board/board_file.cpp:
+	.text       start:0x00036F54 end:0x0003CEA4
+	.data       start:0x00001A70 end:0x00001C58
+	.bss        start:0x000001B0 end:0x000001B8
+
+REL/board/board.cpp:
+	.text       start:0x0003CEA4 end:0x0003F3C8
+	.rodata     start:0x00000618 end:0x00000670
+	.data       start:0x00001C58 end:0x00001E40
+	.bss        start:0x000001B8 end:0x00000280
+
+REL/board/board_core.cpp:
+	.text       start:0x0003F3C8 end:0x0003F87C
+	.data       start:0x00001E40 end:0x00001EB0
+	.bss        start:0x00000280 end:0x00000288
+
+REL/board/board_camera.cpp:
+	.text       start:0x0003F87C end:0x0004AB70
+	.ctors      start:0x00000010 end:0x00000014
+	.rodata     start:0x00000670 end:0x000006F8
+	.data       start:0x00001EB0 end:0x00002128
+	.bss        start:0x00000288 end:0x000003B8
+
+REL/board/board_object.cpp:
+	.text       start:0x0004AB70 end:0x0004F8E4
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x000006F8 end:0x00000798
+	.data       start:0x00002128 end:0x00002550
+	.bss        start:0x000003B8 end:0x000003D0
+
+REL/board/board_masu.cpp:
+	.text       start:0x0004F8E4 end:0x00060AF4
+	.ctors      start:0x00000018 end:0x0000001C
+	.rodata     start:0x00000798 end:0x000008B0
+	.data       start:0x00002550 end:0x00002718
+	.bss        start:0x000003D0 end:0x00000488
