@@ -351,6 +351,12 @@ config.libs = [
             Object(NonMatching, "REL/board/board_object.cpp"),
             Object(NonMatching, "REL/board/board_masu.cpp"),
             Object(NonMatching, "REL/board/board_window.cpp"),
+            Object(NonMatching, "REL/board/board_clone.cpp"),
+            Object(NonMatching, "REL/board/board_coin.cpp"),
+            Object(NonMatching, "REL/board/board_fade.cpp"),
+            Object(NonMatching, "REL/board/board_debug.cpp"),
+            Object(NonMatching, "REL/board/board_shadow.cpp"),
+            Object(NonMatching, "REL/board/board_duel.cpp"),
         ],
     },
     Rel(

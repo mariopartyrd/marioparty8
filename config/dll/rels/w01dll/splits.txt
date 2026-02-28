@@ -88,3 +88,50 @@ REL/board/board_masu.cpp:
 	.rodata     start:0x00000798 end:0x000008B0
 	.data       start:0x00002550 end:0x00002718
 	.bss        start:0x000003D0 end:0x00000488
+
+REL/board/board_window.cpp:
+	.text       start:0x00060AF4 end:0x00063F20
+	.rodata     start:0x000008B0 end:0x00000908
+	.data       start:0x00002718 end:0x00002848
+	.bss        start:0x00000488 end:0x00000490
+
+REL/board/board_clone.cpp:
+	.text       start:0x00063F20 end:0x00067AD0
+	.ctors      start:0x0000001C end:0x00000020
+	.rodata     start:0x00000908 end:0x00000970
+	.data       start:0x00002848 end:0x00002A78
+	.bss        start:0x00000490 end:0x00000568
+
+REL/board/board_coin.cpp:
+	.text       start:0x00067AD0 end:0x0006EB04
+	.ctors      start:0x00000020 end:0x00000024
+	.rodata     start:0x00000970 end:0x00000A00
+	.data       start:0x00002A78 end:0x00002C80
+	.bss        start:0x00000568 end:0x00000590
+
+REL/board/board_fade.cpp:
+	.text       start:0x0006EB04 end:0x00079EFC
+	.ctors      start:0x00000024 end:0x00000028
+	.rodata     start:0x00000A00 end:0x00000B10
+	.data       start:0x00002C80 end:0x00002F18
+	.bss        start:0x00000590 end:0x000005E0
+
+REL/board/board_debug.cpp:
+	.text       start:0x00079EFC end:0x0007E514
+	.rodata     start:0x00000B10 end:0x00000B80
+	.data       start:0x00002F18 end:0x00003580
+	.bss        start:0x000005E0 end:0x000005E8
+
+REL/board/board_shadow.cpp:
+	.text       start:0x0007E514 end:0x00081948
+	.ctors      start:0x00000028 end:0x0000002C
+	.rodata     start:0x00000B80 end:0x00000BD0
+	.data       start:0x00003580 end:0x00003620
+	.bss        start:0x000005E8 end:0x000005F8
+
+REL/board/board_duel.cpp:
+	.text       start:0x00081948 end:0x0008678C
+	.ctors      start:0x0000002C end:0x00000030
+	.rodata     start:0x00000BD0 end:0x00000DC0
+	.data       start:0x00003620 end:0x000037D8
+	.bss        start:0x000005F8 end:0x00000608
