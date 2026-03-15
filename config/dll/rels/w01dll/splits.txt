@@ -135,3 +135,75 @@ REL/board/board_duel.cpp:
 	.rodata     start:0x00000BD0 end:0x00000DC0
 	.data       start:0x00003620 end:0x000037D8
 	.bss        start:0x000005F8 end:0x00000608
+
+REL/board/board_map.cpp:
+	.text       start:0x0008678C end:0x0008D584
+	.rodata     start:0x00000DC0 end:0x00000F40
+	.data       start:0x000037D8 end:0x00003838
+	.bss        start:0x00000608 end:0x00000650
+
+REL/board/board_assert.cpp:
+	.text       start:0x0008D584 end:0x0008D6C0
+	.data       start:0x00003838 end:0x00003878
+
+REL/board/board_alloc.cpp:
+	.text       start:0x0008D6C0 end:0x0008D924
+
+REL/board/board_player.cpp:
+	.text       start:0x0008D924 end:0x0009B96C
+	.ctors      start:0x00000030 end:0x00000034
+	.rodata     start:0x00000F40 end:0x000010E0
+	.data       start:0x00003878 end:0x00003C60
+	.bss        start:0x00000650 end:0x00000698
+
+REL/board/board_playermodel.cpp:
+	.text       start:0x0009B96C end:0x0009CED8
+	.ctors      start:0x00000034 end:0x00000038
+	.rodata     start:0x000010E0 end:0x00001168
+	.data       start:0x00003C60 end:0x00003D48
+	.bss        start:0x00000698 end:0x000006A8
+
+REL/board/board_branch.cpp:
+	.text       start:0x0009CED8 end:0x0009F504
+	.rodata     start:0x00001168 end:0x000011D0
+	.data       start:0x00003D48 end:0x00003E50
+
+REL/board/board_dice.cpp:
+	.text       start:0x0009F504 end:0x000A6588
+	.ctors      start:0x00000038 end:0x0000003C
+	.rodata     start:0x000011D0 end:0x000012B0
+	.data       start:0x00003E50 end:0x00004208
+	.bss        start:0x000006A8 end:0x000006B8
+
+REL/board/board_walknum.cpp:
+	.text       start:0x000A6588 end:0x000A7308
+	.rodata     start:0x000012B0 end:0x00001318
+	.data       start:0x00004208 end:0x00004230
+
+REL/board/particle.cpp:
+	.text       start:0x000A7308 end:0x000AAC3C
+	.rodata     start:0x00001318 end:0x00001340
+	.data       start:0x00004230 end:0x00004340
+	.bss        start:0x000006B8 end:0x000006E8
+
+REL/board/game_sprite.cpp:
+	.text       start:0x000AAC3C end:0x000AB0B8
+	.rodata     start:0x00001340 end:0x00001348
+
+REL/board/game_sheet.cpp:
+	.text       start:0x000AB0B8 end:0x000B4FA0
+	.data       start:0x00004340 end:0x00004720
+
+REL/board/board_audio.cpp:
+	.text       start:0x000B4FA0 end:0x000BCD98
+	.ctors      start:0x0000003C end:0x00000040
+	.rodata     start:0x00001348 end:0x00001400
+	.data       start:0x00004720 end:0x00004A60
+	.bss        start:0x000006E8 end:0x00000770
+
+REL/board/board_music.cpp:
+	.text       start:0x000BCD98 end:0x000BFF80
+	.ctors      start:0x00000040 end:0x00000044
+	.rodata     start:0x00001400 end:0x00001410
+	.data       start:0x00004A60 end:0x00004D58
+	.bss        start:0x00000770 end:0x000007A0
