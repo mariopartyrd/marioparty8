@@ -370,6 +370,10 @@ config.libs = [
             Object(NonMatching, "REL/board/game_sheet.cpp"),
             Object(NonMatching, "REL/board/board_audio.cpp"),
             Object(NonMatching, "REL/board/board_music.cpp"),
+            Object(NonMatching, "REL/board/board_status.cpp"),
+            Object(NonMatching, "REL/board/board_mgcall.cpp"),
+            Object(NonMatching, "REL/board/board_guide.cpp"),
+            Object(NonMatching, "REL/board/board_candy.cpp"),
         ],
     },
     Rel(

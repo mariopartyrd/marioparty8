@@ -207,3 +207,31 @@ REL/board/board_music.cpp:
 	.rodata     start:0x00001400 end:0x00001410
 	.data       start:0x00004A60 end:0x00004D58
 	.bss        start:0x00000770 end:0x000007A0
+
+REL/board/board_status.cpp:
+	.text       start:0x000BFF80 end:0x000CC068
+	.ctors      start:0x00000044 end:0x00000048
+	.rodata     start:0x00001410 end:0x00001B98
+	.data       start:0x00004D58 end:0x00005260
+	.bss        start:0x000007A0 end:0x00000820
+
+REL/board/board_mgcall.cpp:
+	.text       start:0x000CC068 end:0x000DDB20
+	.ctors      start:0x00000048 end:0x0000004C
+	.rodata     start:0x00001B98 end:0x000023F8
+	.data       start:0x00005260 end:0x00005B10
+	.bss        start:0x00000820 end:0x00000840
+
+REL/board/board_guide.cpp:
+	.text       start:0x000DDB20 end:0x000E5998
+	.ctors      start:0x0000004C end:0x00000050
+	.rodata     start:0x000023F8 end:0x00002960
+	.data       start:0x00005B10 end:0x00006128
+	.bss        start:0x00000840 end:0x00000870
+
+REL/board/board_candy.cpp:
+	.text       start:0x000E5998 end:0x00115A0C
+	.ctors      start:0x00000050 end:0x00000054
+	.rodata     start:0x00002960 end:0x00003070
+	.data       start:0x00006128 end:0x00007830
+	.bss        start:0x00000870 end:0x00000AE8
