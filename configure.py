@@ -374,6 +374,7 @@ config.libs = [
             Object(NonMatching, "REL/board/board_mgcall.cpp"),
             Object(NonMatching, "REL/board/board_guide.cpp"),
             Object(NonMatching, "REL/board/board_candy.cpp"),
+            Object(NonMatching, "REL/board/board_candyeffect.cpp"),
         ],
     },
     Rel(

@@ -235,3 +235,10 @@ REL/board/board_candy.cpp:
 	.rodata     start:0x00002960 end:0x00003070
 	.data       start:0x00006128 end:0x00007830
 	.bss        start:0x00000870 end:0x00000AE8
+
+REL/board/board_candyeffect.cpp:
+	.text       start:0x00115A0C end:0x00143188
+	.ctors      start:0x00000054 end:0x00000058
+	.rodata     start:0x00003070 end:0x000034C8
+	.data       start:0x00007830 end:0x00008338
+	.bss        start:0x00000AE8 end:0x00000B30
