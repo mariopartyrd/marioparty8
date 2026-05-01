@@ -102,7 +102,7 @@ REL/board/board_clone.cpp:
 	.data       start:0x00002848 end:0x00002A78
 	.bss        start:0x00000490 end:0x00000568
 
-REL/board/board_coin.cpp:
+REL/board/board_coinnum.cpp:
 	.text       start:0x00067AD0 end:0x0006EB04
 	.ctors      start:0x00000020 end:0x00000024
 	.rodata     start:0x00000970 end:0x00000A00
@@ -156,7 +156,7 @@ REL/board/board_player.cpp:
 	.data       start:0x00003878 end:0x00003C60
 	.bss        start:0x00000650 end:0x00000698
 
-REL/board/board_playermodel.cpp:
+REL/board/board_playerchar.cpp:
 	.text       start:0x0009B96C end:0x0009CED8
 	.ctors      start:0x00000034 end:0x00000038
 	.rodata     start:0x000010E0 end:0x00001168
@@ -242,3 +242,78 @@ REL/board/board_candyeffect.cpp:
 	.rodata     start:0x00003070 end:0x000034C8
 	.data       start:0x00007830 end:0x00008338
 	.bss        start:0x00000AE8 end:0x00000B30
+
+REL/board/board_candyplayer.cpp:
+	.text       start:0x00143188 end:0x0016FA40
+	.ctors      start:0x00000058 end:0x0000005C
+	.rodata     start:0x000034C8 end:0x000040C8
+	.data       start:0x00008338 end:0x0000A068
+	.bss        start:0x00000B30 end:0x00000B60
+
+REL/board/board_shop.cpp:
+	.text       start:0x0016FA40 end:0x001818C4
+	.ctors      start:0x0000005C end:0x00000060
+	.rodata     start:0x000040C8 end:0x00004220
+	.data       start:0x0000A068 end:0x0000A668
+	.bss        start:0x00000B60 end:0x00000B80
+
+REL/board/board_luckycoin.cpp:
+	.text       start:0x001818C4 end:0x00189B40
+	.ctors      start:0x00000060 end:0x00000064
+	.rodata     start:0x00004220 end:0x00004268
+	.data       start:0x0000A668 end:0x0000A8C0
+	.bss        start:0x00000B80 end:0x00000B90
+
+REL/board/board_dpdmap.cpp:
+	.text       start:0x00189B40 end:0x001905BC
+	.ctors      start:0x00000064 end:0x00000068
+	.rodata     start:0x00004268 end:0x00004440
+	.data       start:0x0000A8C0 end:0x0000AAA0
+	.bss        start:0x00000B90 end:0x00000BB0
+
+REL/board/board_star.cpp:
+	.text       start:0x001905BC end:0x00194A80
+	.ctors      start:0x00000068 end:0x0000006C
+	.rodata     start:0x00004440 end:0x00004508
+	.data       start:0x0000AAA0 end:0x0000AB88
+	.bss        start:0x00000BB0 end:0x00000BC0
+
+REL/board/board_open.cpp:
+	.text       start:0x00194A80 end:0x00197404
+	.ctors      start:0x0000006C end:0x00000070
+	.rodata     start:0x00004508 end:0x00004600
+	.data       start:0x0000AB88 end:0x0000AC40
+	.bss        start:0x00000BC0 end:0x00000BD0
+
+REL/board/board_pause.cpp:
+	.text       start:0x00197404 end:0x0019B9B0
+	.rodata     start:0x00004600 end:0x00004748
+	.data       start:0x0000AC40 end:0x0000AE68
+	.bss        start:0x00000BD0 end:0x00000C10
+
+REL/board/board_config.cpp:
+	.text       start:0x0019B9B0 end:0x001A493C
+	.rodata     start:0x00004748 end:0x00004A50
+	.data       start:0x0000AE68 end:0x0000B150
+	.bss        start:0x00000C10 end:0x00000C18
+
+REL/board/board_lastturn.cpp:
+	.text       start:0x001A493C end:0x001AAC50
+	.ctors      start:0x00000070 end:0x00000074
+	.rodata     start:0x00004A50 end:0x00004AF8
+	.data       start:0x0000B150 end:0x0000B1F8
+	.bss        start:0x00000C18 end:0x00000C28
+
+REL/board/board_specialbonus.cpp:
+	.text       start:0x001AAC50 end:0x001AE0EC
+	.ctors      start:0x00000074 end:0x00000078
+	.rodata     start:0x00004AF8 end:0x00004C70
+	.data       start:0x0000B1F8 end:0x0000B288
+	.bss        start:0x00000C28 end:0x00000C38
+
+REL/board/board_scroll.cpp:
+	.text       start:0x001AE0EC end:0x001B136C
+	.ctors      start:0x00000078 end:0x0000007C
+	.rodata     start:0x00004C70 end:0x00004CAC
+	.data       start:0x0000B288 end:0x0000B428
+	.bss        start:0x00000C38 end:0x00000C54
