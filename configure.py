@@ -195,6 +195,8 @@ cflags_runtime = [
     "-gccinc",
     "-common off",
     "-inline auto",
+    "-i libs/Runtime/include",
+    "-i libs/MSL_C/include",
 ]
 
 # Game flags
@@ -203,6 +205,12 @@ cflags_game = [
     "-O0,p",
     "-char unsigned",
     "-fp_contract off",
+    "-i libs/MSL_C++/include",
+    "-i libs/MSL_C/include",
+    "-i libs/MetroTRK/include",
+    "-i libs/RVLFaceLib/include",
+    "-i libs/RVL_SDK/include",
+    "-i libs/Runtime/include",
 ]
 
 # REL flags
@@ -210,7 +218,13 @@ cflags_rel = [
     *cflags_game,
     "-sdata 0",
     "-sdata2 0",
-    "-pool off"
+    "-pool off",
+    "-i libs/MSL_C++/include",
+    "-i libs/MSL_C/include",
+    "-i libs/MetroTRK/include",
+    "-i libs/RVLFaceLib/include",
+    "-i libs/RVL_SDK/include",
+    "-i libs/Runtime/include",
 ]
 
 
@@ -253,8 +267,8 @@ config.libs = [
         "cflags": cflags_runtime,
         "host": False,
         "objects": [
-            Object(NonMatching, "Runtime.PPCEABI.H/global_destructor_chain.c"),
-            Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
+            Object(Matching, "Runtime/global_destructor_chain.c"),
+            Object(Matching, "Runtime/__init_cpp_exceptions.cpp"),
         ],
     },
     {
@@ -272,8 +286,8 @@ config.libs = [
             Object(NonMatching, "game/font.c"),
             Object(NonMatching, "game/init.c"),
             Object(NonMatching, "game/jmp.c"),
-            Object(NonMatching, "game/malloc.c"),
-            Object(NonMatching, "game/memory.c"),
+            Object(Matching, "game/malloc.c"),
+            Object(Matching, "game/memory.c"),
             Object(NonMatching, "game/printfunc.c"),
             Object(NonMatching, "game/process.c"),
             Object(NonMatching, "game/sprman.c"),
