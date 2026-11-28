@@ -7,6 +7,9 @@ splits: config/RM8E01/splits.txt
 # See config.example.yml for a list.
 mw_comment_version: 11
 
+block_relocations:
+    - target: .text:0x80080000
+
 modules:
 - object: orig/RM8E01/files/dll/w05dll.rel
   hash: c9ca763ad955a866531e0d981b94c6e4ddc157be

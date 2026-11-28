@@ -135,6 +135,7 @@ if args.no_asm:
 config.binutils_tag = "2.42-1"
 config.compilers_tag = "20231018"
 config.dtk_tag = "v0.9.2"
+config.objdiff_tag = "v3.6.1"
 config.sjiswrap_tag = "v1.1.1"
 config.wibo_tag = "0.6.11"
 
