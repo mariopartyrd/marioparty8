@@ -401,7 +401,11 @@ game/mii.c:
 	.sbss       start:0x802CE450 end:0x802CE468
 	.sdata2     start:0x802CFDA8 end:0x802CFDC8
 
-Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+Runtime/global_destructor_chain.c:
+	.text       start:0x801976CC end:0x8019772C
+	.sbss       start:0x802CEDB8 end:0x802CEDC0
+
+Runtime/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
 	.ctors      start:0x801AAD60 end:0x801AAD64 rename:.ctors$10
 	.dtors      start:0x801AADC0 end:0x801AADC4 rename:.dtors$10
