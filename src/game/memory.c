@@ -110,13 +110,14 @@ static void *HuMemTailMemoryAlloc2(void *heap, s32 size, u32 num, u32 retAddr)
 {
     s32 blockSize = MEM_ALLOC_SIZE(size);
     MEMORY_BLOCK *block = heap;
+	MEMORY_BLOCK *old_block;
     while(block->next != heap) {
         block = block->next;
     }
     do {
         if(!block->flag && block->size >= blockSize) {
             if(block->size-blockSize > 32u) {
-                MEMORY_BLOCK *old_block = block;
+                old_block = block;
                 block = (MEMORY_BLOCK *)(((char *)old_block)+(old_block->size-blockSize));
                 block->size = blockSize;
                 block->prev = old_block;
@@ -170,8 +171,9 @@ void *HuMemMemoryRealloc(void *heap, void *ptr, s32 size, u32 retAddr)
 void HuMemMemoryFreeNum(void *heap, u32 num, u32 retAddr)
 {
     MEMORY_BLOCK *block = heap;
+	MEMORY_BLOCK *block_next;
     do {
-        MEMORY_BLOCK *block_next = block->next;
+        block_next = block->next;
         if(block->flag && block->num == num) {
             HuMemMemoryFree(BLOCK_GET_DATA(block), retAddr);
         }
